@@ -1,0 +1,23 @@
+debug: false
+
+logging:
+  level:
+    root: INFO
+
+server:
+  port: 8080
+  http2:
+    enabled: true
+  error:
+    whitelabel:
+      enabled: false
+    include-message: always
+
+spring:
+  main:
+    web-application-type: reactive
+
+terra:
+  xApiKey: ${TERRA_API_KEY}
+  devId: ${TERRA_DEV_ID}
+  webhookSecret: ${TERRA_WEBHOOK_SECRET}
